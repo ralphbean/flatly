@@ -11,11 +11,7 @@ pyramid.debug_authorization = false
 pyramid.debug_notfound = false
 pyramid.debug_routematch = false
 pyramid.default_locale_name = en
-pyramid.includes =
-    pyramid_debugtoolbar
-    pyramid_tm
 
-sqlalchemy.url = sqlite:///%(here)s/{{project}}.sqlite
 
 # By default, the toolbar only appears for clients from IP addresses
 # '127.0.0.1' and '::1'.

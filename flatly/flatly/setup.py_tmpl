@@ -3,11 +3,10 @@ import os
 from setuptools import setup
 
 here = os.path.abspath(os.path.dirname(__file__))
-README = open(os.path.join(here, 'README.txt')).read()
+README = open(os.path.join(here, 'README.rst')).read()
 
 requires = [
     'pyramid',
-    'waitress',
     ]
 
 setup(name='{{project}}',
@@ -24,7 +23,7 @@ setup(name='{{project}}',
       author_email='',
       url='',
       keywords='web wsgi bfg pylons pyramid flatly',
-      packages=['{{package}}'],
+      modules=['{{package}}.py'],
       include_package_data=True,
       zip_safe=False,
       install_requires=requires,
