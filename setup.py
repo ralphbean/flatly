@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 f = open('README.rst')
 long_description = f.read().strip()
@@ -15,6 +15,7 @@ setup(
     author_email='rbean@redhat.com',
     url='http://github.com/ralphbean/flatly/',
     license='BSD',
+    packages=find_packages(),
     install_requires=[
         "pyramid",
     ],
