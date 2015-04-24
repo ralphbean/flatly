@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 f = open('README.rst')
 long_description = f.read().strip()
@@ -8,13 +8,14 @@ f.close()
 
 setup(
     name="flatly",
-    version='0.1',
+    version='0.2',
     description="Pyramid scaffold that is flat.  Kind of like Flask.",
     long_description=long_description,
     author='Ralph Bean',
     author_email='rbean@redhat.com',
     url='http://github.com/ralphbean/flatly/',
     license='BSD',
+    packages=find_packages(),
     install_requires=[
         "pyramid",
     ],
