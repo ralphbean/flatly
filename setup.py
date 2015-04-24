@@ -8,7 +8,7 @@ f.close()
 
 setup(
     name="flatly",
-    version='0.1',
+    version='0.2',
     description="Pyramid scaffold that is flat.  Kind of like Flask.",
     long_description=long_description,
     author='Ralph Bean',
